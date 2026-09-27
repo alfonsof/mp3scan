@@ -3,8 +3,10 @@ from unittest.mock import MagicMock, patch
 import sys
 import os
 
-# We confirm that we can import the mp3scan module from the current directory
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Ensure the project root is on sys.path even when tests live in a subfolder.
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 import mp3scan
 from mutagen.mp3 import BitrateMode

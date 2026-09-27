@@ -141,25 +141,34 @@ The list of individual library packages that the application uses:
   - Lyrics: The lyrics to the song.
   - Album Artwork (APIC or equivalent): The image embedded in the file.
 
-## Testing
+## Running Tests
 
-This project includes unit tests to verify the functionality of the code.
+This project includes unit tests to verify the functionality of the script. The tests use the standard `unittest` library.
 
-To run the tests, execute the following command in your terminal:
+## Running Tests
+
+This project includes unit tests to verify the functionality of the script.
+
+### Using the standard library test runner
+
+From the project root:
 
 ```bash
-python test_mp3scan.py
+python -m unittest discover -s tests -v
 ```
-Or if you want more details about the exit:
+
+### Optional: using pytest
+
+If you prefer pytest, install it first in your virtual environment:
 
 ```bash
-python test_mp3scan.py -v
+pip install pytest
 ```
 
-Or using the unittest module directly:
+Execute the tests:
 
 ```bash
-python -m unittest test_mp3scan.py
+pytest -q
 ```
 
 ## License
