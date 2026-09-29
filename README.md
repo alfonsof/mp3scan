@@ -1,4 +1,4 @@
-# MP3Scan utility in Python
+# mp3Scan utility in Python
 
 This repo contains an `mp3scan` utility in Python code.
 
