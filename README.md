@@ -1,6 +1,6 @@
 # mp3Scan utility in Python
 
-This repo contains an `mp3scan` utility in Python code.
+This repo contains the `mp3scan` utility in Python code.
 
 This utility extracts information from an MP3 file, including:
 
